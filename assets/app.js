@@ -1,4 +1,4 @@
-var gifs = ["Cat", "Husky", "LOL", "Spinner", "Coding", ]
+var gifs = ["CAT", "HUSKY", "OWL", "MONKEY", "HAMSTER","MOUSE","FALCON","BEAR","RABBIT" ]
 
 function showGifs() {
 
@@ -10,7 +10,7 @@ function showGifs() {
     url: queryURL,
     method: "GET",
     data: {
-      api_key: "QkNPNxqrYIztZQQGRmfRfyb22nSejuSe",
+      api_key: "dc6zaTOxFJmzC", //Used class key because mine wasnt working properly
       q: buttonPressed,
       limit: "9",
       rating: "g",
