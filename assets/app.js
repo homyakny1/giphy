@@ -4,13 +4,13 @@ function showGifs() {
 
   $(".images").empty()
   var buttonPressed = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search";
+  var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=QkNPNxqrYIztZQQGRmfRfyb22nSejuSe";
 
   $.ajax({
     url: queryURL,
     method: "GET",
     data: {
-      api_key: "dc6zaTOxFJmzC", //Used class key because mine wasnt working properly
+      // api_key: "QkNPNxqrYIztZQQGRmfRfyb22nSejuSe",
       q: buttonPressed,
       limit: "9",
       rating: "g",
